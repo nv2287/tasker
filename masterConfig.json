@@ -1,0 +1,89 @@
+{
+  "timestamp": "2023-09-15T08:00:00Z",
+  "duration": 900,
+  "globalDefaults": {
+    "safety": {
+      "maxTouchAttempts": 3,
+      "retryDelayMs": 4000,
+      "totalTimeoutMs": 15000,
+      "fallbackAction": "backAndSkip",
+      "logFailure": true,
+      "requiresNetwork": true,
+      "skipOnLowBattery": false,
+      "maxConsecutiveFailures": 5
+    }
+  },
+  "actions": [
+    {
+      "type": "like",
+      "time": 30,
+      "target": "photo_enthusiast_sophie",
+      "waitBefore": 0,
+      "waitAfter": 0,
+      "action_id": "like_001",
+      "selector": "text:Like",
+      "safety": {
+        "maxTouchAttempts": 2,
+        "retryDelayMs": 2000,
+        "totalTimeoutMs": 10000
+      }
+    },
+    {
+      "type": "comment",
+      "time": 60,
+      "target": "camera_lover_max",
+      "content": "Great post on photography! I've been following your content for a while.",
+      "waitBefore": 0,
+      "waitAfter": 0,
+      "action_id": "comment_002",
+      "selector": "text:Comment",
+      "safety": {
+        "maxTouchAttempts": 4,
+        "totalTimeoutMs": 18000
+      }
+    },
+    {
+      "type": "dm",
+      "time": 120,
+      "target": "travel_photographer_emily",
+      "content": "Hey travel_photographer_emily! I noticed you post about Photo. Would love to connect!",
+      "waitBefore": 0,
+      "waitAfter": 0,
+      "action_id": "dm_003",
+      "selector": "text:Message",
+      "safety": {
+        "maxTouchAttempts": 5,
+        "totalTimeoutMs": 20000,
+        "fallbackAction": "skipAndContinue"
+      }
+    },
+    {
+      "type": "follow",
+      "time": 180,
+      "target": "adventure_seeker_david",
+      "waitBefore": 0,
+      "waitAfter": 0,
+      "action_id": "follow_004",
+      "selector": "text:Follow",
+      "safety": {
+        "maxTouchAttempts": 4,
+        "totalTimeoutMs": 18000,
+        "fallbackAction": "skipAndContinue"
+      }
+    },
+    {
+      "type": "like",
+      "time": 240,
+      "target": "picture_perfect_kate",
+      "waitBefore": 0,
+      "waitAfter": 0,
+      "action_id": "like_005",
+      "selector": "text:Like",
+      "safety": {
+        "maxTouchAttempts": 2,
+        "retryDelayMs": 2000,
+        "totalTimeoutMs": 10000
+      }
+    }
+  ]
+}
