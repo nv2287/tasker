@@ -1,0 +1,5289 @@
+
+<TaskerData sr="" dvi="1" tv="6.5.9">
+<Profile sr="prof62" ve="2">
+<cdate>1750158627384</cdate>
+<clp>true</clp>
+<edate>1746000110001</edate>
+<flags>40</flags>
+<id>62</id>
+<mid0>43</mid0>
+<nme>P_Config_Time_Watcher</nme>
+<Time sr="con0">
+<fh>-1</fh>
+<fm>-1</fm>
+<rep>2</rep>
+<repval>5</repval>
+<th>-1</th>
+<tm>-1</tm>
+</Time>
+</Profile>
+<Profile sr="prof63" ve="2">
+<cdate>1750158627385</cdate>
+<clp>true</clp>
+<edate>1746000120001</edate>
+<flags>40</flags>
+<id>63</id>
+<mid0>44</mid0>
+<nme>P_Timeout_Checker</nme>
+<Time sr="con0">
+<fh>-1</fh>
+<fm>-1</fm>
+<rep>2</rep>
+<repval>1</repval>
+<th>-1</th>
+<tm>-1</tm>
+</Time>
+</Profile>
+<Profile sr="prof64" ve="2">
+<cdate>1750158627386</cdate>
+<clp>true</clp>
+<edate>1746000130001</edate>
+<flags>40</flags>
+<id>64</id>
+<mid0>45</mid0>
+<nme>P_Deadman_Checker</nme>
+<Time sr="con0">
+<fh>-1</fh>
+<fm>-1</fm>
+<rep>2</rep>
+<repval>15</repval>
+<th>-1</th>
+<tm>-1</tm>
+</Time>
+</Profile>
+<Profile sr="prof65" ve="2">
+<cdate>1750158627388</cdate>
+<clp>true</clp>
+<edate>1746000140001</edate>
+<flags>40</flags>
+<id>65</id>
+<mid0>46</mid0>
+<mid1>47</mid1>
+<nme>P_Battery_Watcher</nme>
+<State sr="con0" ve="2">
+<code>140</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="19"/>
+</State>
+</Profile>
+<Profile sr="prof66" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746000150001</edate>
+<flags>40</flags>
+<id>66</id>
+<mid0>48</mid0>
+<nme>P_Error_Watcher</nme>
+<State sr="con0" ve="2">
+<code>165</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%SessionError</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</State>
+</Profile>
+<Profile sr="prof67" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746000160001</edate>
+<flags>40</flags>
+<id>67</id>
+<mid0>49</mid0>
+<nme>P_Internet_Watcher</nme>
+<Time sr="con0">
+<fh>-1</fh>
+<fm>-1</fm>
+<rep>2</rep>
+<repval>2</repval>
+<th>-1</th>
+<tm>-1</tm>
+</Time>
+</Profile>
+<Profile sr="prof68" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746000170001</edate>
+<flags>40</flags>
+<id>68</id>
+<mid0>50</mid0>
+<nme>P_Heat_Pause</nme>
+<State sr="con0" ve="2">
+<code>141</code>
+<Int sr="arg0" val="430"/>
+<Int sr="arg1" val="2000"/>
+</State>
+</Profile>
+<Profile sr="prof69" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746000180001</edate>
+<flags>40</flags>
+<id>69</id>
+<mid0>51</mid0>
+<nme>P_Heat_Resume</nme>
+<State sr="con0" ve="2">
+<code>141</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="299"/>
+</State>
+<State sr="con1" ve="2">
+<code>165</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%Paused</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</State>
+</Profile>
+<Profile sr="prof70" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746100190001</edate>
+<flags>40</flags>
+<id>70</id>
+<mid0>5</mid0>
+<nme>P_Manual_Kill_Switch</nme>
+<Event sr="con0" ve="2">
+<code>2000</code>
+<pri>0</pri>
+<App sr="arg0">
+<appClass/>
+<appPkg>net.dinglisch.android.taskerm</appPkg>
+<label>Tasker</label>
+</App>
+<Str sr="arg1" ve="3">IEA Running</Str>
+</Event>
+</Profile>
+<Profile sr="prof71" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746100200001</edate>
+<flags>40</flags>
+<id>71</id>
+<mid0>6</mid0>
+<nme>P_Manual_Start</nme>
+<Event sr="con0" ve="2">
+<code>2091</code>
+<pri>0</pri>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">start-iea</Str>
+<Str sr="arg2" ve="3"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Event>
+</Profile>
+<Profile sr="prof72" ve="2">
+<cdate>1750158627389</cdate>
+<clp>true</clp>
+<edate>1746200210001</edate>
+<flags>40</flags>
+<id>72</id>
+<mid0>13</mid0>
+<nme>P_Human_Emulation</nme>
+<Time sr="con0">
+<fh>-1</fh>
+<fm>-1</fm>
+<rep>2</rep>
+<repval>12</repval>
+<th>-1</th>
+<tm>-1</tm>
+</Time>
+</Profile>
+<Profile sr="prof73" ve="2">
+<cdate>1750158627390</cdate>
+<clp>true</clp>
+<edate>1746400220001</edate>
+<flags>40</flags>
+<id>73</id>
+<mid0>23</mid0>
+<nme>P_Daily_Log_Cleanup</nme>
+<Time sr="con0">
+<fh>2</fh>
+<fm>0</fm>
+<th>2</th>
+<tm>0</tm>
+</Time>
+</Profile>
+<Profile sr="prof74" ve="2">
+<cdate>1750158627390</cdate>
+<edate>1750070385465</edate>
+<flags>8</flags>
+<id>74</id>
+<mid0>53</mid0>
+<nme>P_Config_File_Watcher</nme>
+<Event sr="con0" ve="2">
+<code>222</code>
+<pri>0</pri>
+<Str sr="arg0" ve="3">Documents/masterConfig.json</Str>
+<Str sr="arg1" ve="3"/>
+</Event>
+</Profile>
+<Profile sr="prof75" ve="2">
+<cdate>1750158627391</cdate>
+<clp>true</clp>
+<edate>1750080120002</edate>
+<flags>40</flags>
+<id>75</id>
+<mid0>38</mid0>
+<nme>P_Manual_Start_Random</nme>
+<Event sr="con0" ve="2">
+<code>2091</code>
+<pri>0</pri>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">start-random-iea</Str>
+<Str sr="arg2" ve="3"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Event>
+</Profile>
+<Project sr="proj0" ve="2">
+<cdate>1746000000000</cdate>
+<name>IEA_Automation</name>
+<pids>65,66,68,70,64,72,74,62,75,63,67,71,73,69</pids>
+<tids>
+13,9,12,53,33,15,18,3,60,7,41,35,55,56,45,22,8,52,43,54,10,29,32,11,2,16,59,40,17,26,19,61,34,39,20,21,4,46,27,58,36,6,42,57,37,49,25,14,28,38,30,5,50,23,44,51,31,24,47,48
+</tids>
+</Project>
+<Task sr="task10">
+<cdate>1746100480000</cdate>
+<edate>1746100480001</edate>
+<id>10</id>
+<nme>Perform DM</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Open Instagram</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert AutoInput to send DM to user %par1 with text: %par2
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>888</code>
+<Str sr="arg0" ve="3">%DMCount</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+</Action>
+</Task>
+<Task sr="task11">
+<cdate>1746100490000</cdate>
+<edate>1746100490001</edate>
+<id>11</id>
+<nme>Open Instagram</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>20</code>
+<App sr="arg0">
+<appClass>com.instagram.mainactivity.MainActivity</appClass>
+<appPkg>com.instagram.android</appPkg>
+<label>Instagram</label>
+</App>
+<Str sr="arg1" ve="3"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task12">
+<cdate>1746100500000</cdate>
+<edate>1746100500001</edate>
+<id>12</id>
+<nme>Perform Follow</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Open Instagram</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert AutoInput to follow user %par1 using selector %par2
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>888</code>
+<Str sr="arg0" ve="3">%FollowCount</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+</Action>
+</Task>
+<Task sr="task13">
+<cdate>1746200510000</cdate>
+<edate>1746200510001</edate>
+<id>13</id>
+<nme>Do Random Human Action</nme>
+<pri>6</pri>
+<Action sr="act0" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>Or</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%IsRunning</lhs>
+<op>13</op>
+<rhs/>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%Paused</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act1" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<label>Fix #6: This task simulates human behavior.</label>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert random human-like UI actions here (e.g., scroll, short wait, view profile).
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task14">
+<cdate>1746300520000</cdate>
+<edate>1746300520001</edate>
+<id>14</id>
+<nme>AI_Engage_Unknown</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_TargetType</Str>
+<Str sr="arg1" ve="3">unknown</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_ActionList</Str>
+<Str sr="arg1" ve="3">like,comment,follow</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act10" ve="7">
+<code>40</code>
+</Action>
+<Action sr="act11" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_Update_UnknownLog</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act12" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act13" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">User %AI_OCR_Username already in log. Skipping.</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act14" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_Handle_Error</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act15" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act16" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">
+/storage/emulated/0/Documents/engagedAccountsLog.txt
+</Str>
+<Str sr="arg1" ve="3">%AI_Engaged_Accounts()</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_OCR_Check_Username</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>417</code>
+<se>false</se>
+<Str sr="arg0" ve="3">/Documents/iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%log_data</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%log_data</lhs>
+<op>3</op>
+<rhs>*%AI_OCR_Username*</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act5" ve="7">
+<code>590</code>
+<Str sr="arg0" ve="3">%AI_ActionList</Str>
+<Str sr="arg1" ve="3">,</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>39</code>
+<Str sr="arg0" ve="3">%action</Str>
+<Str sr="arg1" ve="3">%AI_ActionList()</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_Wait_Random</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_LastAction</Str>
+<Str sr="arg1" ve="3">%action</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">// Placeholder: AI_Handle_Action for %action</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task15">
+<cdate>1746300530000</cdate>
+<edate>1746300530001</edate>
+<id>15</id>
+<nme>AI_Engage_Known</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_TargetType</Str>
+<Str sr="arg1" ve="3">known</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_OCR_Check_Username</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>417</code>
+<se>false</se>
+<Str sr="arg0" ve="3">/Documents/iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%engagement_log</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%engagement_log</lhs>
+<op>2</op>
+<rhs>*%AI_OCR_Username*</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act4" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act6" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%AI_OCR_Username</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act7" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">AI_Wait_Random</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">// Placeholder: AI_Handle_Action</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task16">
+<cdate>1746300540000</cdate>
+<edate>1746300540001</edate>
+<id>16</id>
+<nme>AI_OCR_Check_Username</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_OCR_Username</Str>
+<Str sr="arg1" ve="3">placeholder_username</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: This will be replaced by AutoInput OCR read
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task17">
+<cdate>1746300550000</cdate>
+<edate>1746300550001</edate>
+<id>17</id>
+<nme>AI_OCR_Check_LikeStatus</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_OCR_LikeStatus</Str>
+<Str sr="arg1" ve="3">not_liked</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Replace with AutoInput OCR Like icon check
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task18">
+<cdate>1746300560000</cdate>
+<edate>1746300560001</edate>
+<id>18</id>
+<nme>AI_OCR_Check_PostStatus</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_OCR_PostStatus</Str>
+<Str sr="arg1" ve="3">not_commented</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: Replace with AutoInput OCR post check</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task19">
+<cdate>1746300570000</cdate>
+<edate>1746300570001</edate>
+<id>19</id>
+<nme>AI_Update_UnknownLog</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_LogEntry</Str>
+<Str sr="arg1" ve="3">[%TIMES] %AI_OCR_Username %AI_LastAction</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">Tasker/IEA_UnknownLog.txt</Str>
+<Str sr="arg1" ve="3">%AI_LogEntry</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task2">
+<cdate>1746100400000</cdate>
+<edate>1746100400001</edate>
+<id>2</id>
+<nme>Restart If Idle</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Deadman trigger detected. Attempting to restart session.
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">End Session Gracefully</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">deadman_restart</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task20">
+<cdate>1746300580000</cdate>
+<edate>1746300580001</edate>
+<id>20</id>
+<nme>AI_Wait_Random</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%AI_WaitTime</Str>
+<Int sr="arg1" val="3"/>
+<Int sr="arg2" val="10"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1">
+<var>%AI_WaitTime</var>
+</Int>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+</Task>
+<Task sr="task21">
+<cdate>1746300590000</cdate>
+<edate>1746300590001</edate>
+<id>21</id>
+<nme>AI_Switch_Account</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%AI_SwitchTarget</Str>
+<Str sr="arg1" ve="3">next_account_placeholder</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Replace with AutoInput account switch UI
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task22">
+  <cdate>1746300600000</cdate>
+  <edate>1746300600001</edate>
+  <id>22</id>
+  <nme>AI_Handle_Error</nme>
+  <pri>100</pri>
+  <Action sr="act0" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%AI_ErrorType</Str>
+    <Str sr="arg1" ve="3">%par1</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act1" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Log Error</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">%AI_ErrorType</Str>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act2" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%AI_ErrorType</lhs>
+        <op>0</op>
+        <rhs>user_already_engaged</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act3" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">User already engaged. Continuing with next action.</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act4" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act5" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%AI_ErrorType</lhs>
+        <op>0</op>
+        <rhs>no_username_detected</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act6" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Failed to detect username. Trying again...</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act7" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act8" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%AI_ErrorType</lhs>
+        <op>0</op>
+        <rhs>network_error</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act9" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%Paused</Str>
+    <Str sr="arg1" ve="3">1</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act10" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Network error detected. Session paused.</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act11" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act12" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%AI_ErrorType</lhs>
+        <op>0</op>
+        <rhs>timeout_error</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act13" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Operation timed out. Retrying...</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act14" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act15" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%SessionError</Str>
+    <Str sr="arg1" ve="3">%AI_ErrorType</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act16" ve="7">
+    <code>137</code>
+    <Int sr="arg0" val="0"/>
+    <Str sr="arg1" ve="3"/>
+  </Action>
+</Task>
+</Task>
+<Task sr="task23">
+<cdate>1746400610000</cdate>
+<edate>1746400610001</edate>
+<id>23</id>
+<nme>Clear Old Logs</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%cutoff_time</Str>
+<Str sr="arg1" ve="3">%TIMES - 10368000</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>412</code>
+<Str sr="arg0" ve="3">/Documents/</Str>
+<Str sr="arg1" ve="3">iea-automation-*</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Str sr="arg5" ve="3">%log_files</Str>
+<Int sr="arg6" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>409</code>
+<Str sr="arg0" ve="3">/Documents/IEA-Archive/</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>39</code>
+<Str sr="arg0" ve="3">%log_file</Str>
+<Str sr="arg1" ve="3">%log_files()</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>342</code>
+<Int sr="arg0" val="1"/>
+<Str sr="arg1" ve="3">%log_file</Str>
+<Str sr="arg2" ve="3">%mod_time</Str>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%mod_time</lhs>
+<op>6</op>
+<rhs>%cutoff_time</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act6" ve="7">
+<code>400</code>
+<Str sr="arg0" ve="3">%log_file</Str>
+<Str sr="arg1" ve="3">/Documents/IEA-Archive/</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act8" ve="7">
+<code>40</code>
+</Action>
+</Task>
+<Task sr="task24">
+<cdate>1746500620000</cdate>
+<edate>1750074232570</edate>
+<id>24</id>
+<nme>Navigate_To_Target_From_Hashtag</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>300</code>
+<label>Start Navigate_To_Target_From_Hashtag</label>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput taps search bar</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput types hashtag from config</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: AutoInput selects a target account or post
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: AutoInput opens the target profile or post
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>300</code>
+<label>End Navigate_To_Target_From_Hashtag</label>
+</Action>
+</Task>
+<Task sr="task25">
+<cdate>1746500630000</cdate>
+<edate>1746500630001</edate>
+<id>25</id>
+<nme>Navigate_To_Target_From_SourceFollowers</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>300</code>
+<label>Start Navigate_To_Target_From_SourceFollowers</label>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput opens Instagram search</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: AutoInput types source account username from config
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput opens source account</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput opens followers list</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput scrolls followers list</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput selects a random follower</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput opens follower profile</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>300</code>
+<label>End Navigate_To_Target_From_SourceFollowers</label>
+</Action>
+</Task>
+<Task sr="task26">
+<cdate>1750080000001</cdate>
+<edate>1750080000002</edate>
+<id>26</id>
+<nme>Clear_AI_Variables</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%TargetTerm</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%SourceAccount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%SearchSelectedAccount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%FollowerSelected</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%KnownTarget</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%CommentContent</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%DMContent</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="0"/>
+</Action>
+</Task>
+<Task sr="task27">
+<cdate>1750080010001</cdate>
+<edate>1750080010002</edate>
+<id>27</id>
+<nme>Select_Random_Comment_DM</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>354</code>
+<Str sr="arg0" ve="3">%all_comments</Str>
+<Str sr="arg1" ve="3">%config_data[comments]()</Str>
+<Str sr="arg2" ve="3">,</Str>
+</Action>
+<Action sr="act1" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%rand_index</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%all_comments(#)</var>
+</Int>
+</Action>
+<Action sr="act2" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%CommentContent</Str>
+<Str sr="arg1" ve="3">%all_comments(%rand_index)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>354</code>
+<Str sr="arg0" ve="3">%all_dms</Str>
+<Str sr="arg1" ve="3">%config_data[dms]()</Str>
+<Str sr="arg2" ve="3">,</Str>
+</Action>
+<Action sr="act4" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%rand_index</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%all_dms(#)</var>
+</Int>
+</Action>
+<Action sr="act5" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%DMContent</Str>
+<Str sr="arg1" ve="3">%all_dms(%rand_index)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Selected Comment: %CommentContent | Selected DM: %DMContent
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task28">
+<cdate>1750080020001</cdate>
+<edate>1750081830089</edate>
+<id>28</id>
+<nme>Select_Random_Target_Term</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>354</code>
+<Str sr="arg0" ve="3">%all_terms</Str>
+<Str sr="arg1" ve="3">%config_data[hashtags]()</Str>
+<Str sr="arg2" ve="3">,</Str>
+</Action>
+<Action sr="act1" ve="7">
+<code>355</code>
+<Str sr="arg0" ve="3">%all_terms</Str>
+<Int sr="arg1" val="9999"/>
+<Str sr="arg2" ve="3">%config_data[keywords]()</Str>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%rand_index</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%all_terms(#)</var>
+</Int>
+</Action>
+<Action sr="act3" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%TargetTerm</Str>
+<Str sr="arg1" ve="3">%all_terms(%rand_index)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%DATE %TIME: Selected Target Term: %TargetTerm</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task29">
+<cdate>1750080030001</cdate>
+<edate>1750080030002</edate>
+<id>29</id>
+<nme>Select_Random_Source_Account</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>354</code>
+<Str sr="arg0" ve="3">%all_sources</Str>
+<Str sr="arg1" ve="3">%config_data[sourceAccounts]()</Str>
+<Str sr="arg2" ve="3">,</Str>
+</Action>
+<Action sr="act1" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%rand_index</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%all_sources(#)</var>
+</Int>
+</Action>
+<Action sr="act2" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%SourceAccount</Str>
+<Str sr="arg1" ve="3">%all_sources(%rand_index)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Selected Source Account: %SourceAccount
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task3">
+<cdate>1746100410000</cdate>
+<edate>1746100410001</edate>
+<id>3</id>
+<nme>Save Session Log</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>342</code>
+<label>Check main log size</label>
+<Int sr="arg0" val="3"/>
+<Str sr="arg1" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg2" ve="3">%log_size</Str>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%log_size</lhs>
+<op>7</op>
+<rhs>1048576</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act10" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act11" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%log_reason</Str>
+<Str sr="arg1" ve="3">%par1</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act12" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act13" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%csvLine</Str>
+<Str sr="arg1" ve="3">
+%DATE,%TIME,%log_reason,%LikeCount,%CommentCount,%DMCount,%FollowCount
+</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act14" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-stats.csv</Str>
+<Str sr="arg1" ve="3">%csvLine</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act15" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%log_entry</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Session ended. Reason: %log_reason. Likes: %LikeCount, Comments: %CommentCount, DMs: %DMCount, Follows: %FollowCount
+</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act16" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%log_entry</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act17" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%LikeCount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act18" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%CommentCount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act19" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%DMCount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>400</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">iea-automation-log-%DATE.txt</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act20" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%FollowCount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act4" ve="7">
+<code>342</code>
+<label>Check stats file size</label>
+<Int sr="arg0" val="3"/>
+<Str sr="arg1" ve="3">iea-automation-stats.csv</Str>
+<Str sr="arg2" ve="3">%stats_size</Str>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%stats_size</lhs>
+<op>7</op>
+<rhs>1048576</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act6" ve="7">
+<code>400</code>
+<Str sr="arg0" ve="3">iea-automation-stats.csv</Str>
+<Str sr="arg1" ve="3">iea-automation-stats-%DATE.csv</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act8" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%par1</lhs>
+<op>13</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act9" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%log_reason</Str>
+<Str sr="arg1" ve="3">unknown</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+</Task>
+<Task sr="task30">
+<cdate>1750080040001</cdate>
+<edate>1750080040002</edate>
+<id>30</id>
+<nme>Set_Follower_Post_Filters</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%MinFollower</Str>
+<Str sr="arg1" ve="3">%config_data[minFollowers]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%MaxFollower</Str>
+<Str sr="arg1" ve="3">%config_data[maxFollowers]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%MinPost</Str>
+<Str sr="arg1" ve="3">%config_data[minPosts]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%MaxPost</Str>
+<Str sr="arg1" ve="3">%config_data[maxPosts]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Set filters: Followers (%MinFollower-%MaxFollower), Posts (%MinPost-%MaxPost)
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task31">
+<cdate>1750080050001</cdate>
+<edate>1750080050002</edate>
+<id>31</id>
+<nme>Select_Known_Target_OCR</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>39</code>
+<Str sr="arg0" ve="3">%retry</Str>
+<Str sr="arg1" ve="3">1:3</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput OCR to get username...</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%KnownTarget</Str>
+<Str sr="arg1" ve="3">mock_ocr_user_%retry</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>135</code>
+<Int sr="arg0" val="3"/>
+<Int sr="arg1" val="1"/>
+<Str sr="arg2" ve="3"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%KnownTarget</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act4" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>40</code>
+</Action>
+<Action sr="act6" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Engagement_Logger</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%KnownTarget</Str>
+<Str sr="arg3" ve="3">ocr_capture</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task32">
+<cdate>1750080060001</cdate>
+<edate>1750080060002</edate>
+<id>32</id>
+<nme>Engagement_Logger</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">Documents/engagedAccountsLog.txt</Str>
+<Str sr="arg1" ve="3">%DATE %TIME: %par1 - %par2</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%AI_TargetType</lhs>
+<op>0</op>
+<rhs>unknown</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act2" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">Documents/IEA_UnknownLog.txt</Str>
+<Str sr="arg1" ve="3">%DATE %TIME: %par1 - %par2</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task33">
+  <cdate>1747440110000</cdate>
+  <edate>1747440110001</edate>
+  <id>33</id>
+  <nme>Initialize Session</nme>
+  <pri>100</pri>
+  <Action sr="act0" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%IsRunning</Str>
+    <Str sr="arg1" ve="3">1</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act1" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%Paused</Str>
+    <Str sr="arg1" ve="3"></Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act2" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%LastActionTime</Str>
+    <Str sr="arg1" ve="3">%TIMES</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act3" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%ActionIndex</Str>
+    <Str sr="arg1" ve="3">0</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act4" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%LikeCount</Str>
+    <Str sr="arg1" ve="3">0</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act5" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%CommentCount</Str>
+    <Str sr="arg1" ve="3">0</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act6" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%DMCount</Str>
+    <Str sr="arg1" ve="3">0</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act7" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%FollowCount</Str>
+    <Str sr="arg1" ve="3">0</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act8" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%SessionError</Str>
+    <Str sr="arg1" ve="3"></Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act9" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Log Action</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">SESSION_START</Str>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act10" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Process Next Action</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+</Task>
+</Task>
+<Task sr="task34">
+<cdate>1750080080001</cdate>
+<edate>1750080080002</edate>
+<id>34</id>
+<nme>Random_Follower_Selector</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Navigating to followers of %SourceAccount...
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>354</code>
+<Str sr="arg0" ve="3">%FollowerList</Str>
+<Str sr="arg1" ve="3">
+follower_a,follower_b,follower_c,follower_d,follower_e
+</Str>
+<Str sr="arg2" ve="3">,</Str>
+</Action>
+<Action sr="act2" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%rand_index</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%FollowerList(#)</var>
+</Int>
+</Action>
+<Action sr="act3" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%FollowerSelected</Str>
+<Str sr="arg1" ve="3">%FollowerList(%rand_index)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Tapping on follower's profile: %FollowerSelected
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task35">
+<cdate>1750080090001</cdate>
+<edate>1750081977717</edate>
+<id>35</id>
+<nme>Check_And_Engage_Account</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>417</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Documents/engagedAccountsLog.txt</Str>
+<Str sr="arg1" ve="3">%engaged_log</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act10" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Engagement_Logger</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%par1</Str>
+<Str sr="arg3" ve="3">like, comment, dm</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act11" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act2" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%engaged_log</lhs>
+<op>2</op>
+<rhs>*%par1*</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">%par1 is already engaged. Skipping and going back.</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>245</code>
+</Action>
+<Action sr="act5" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act7" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Engaging with %par1. Liking 2 posts...
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Commenting on 2 posts with: %CommentContent
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: Sending DM: %DMContent</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task36">
+<cdate>1750080100001</cdate>
+<edate>1750080100002</edate>
+<id>36</id>
+<nme>Error_Fallback_Logic</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: ERROR in task '%par2': %par1. Retrying...
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>888</code>
+<Str sr="arg0" ve="3">%ConsecutiveErrors</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%ConsecutiveErrors</lhs>
+<op>7</op>
+<rhs>2</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Max retries reached for %par2. Skipping action.</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%ConsecutiveErrors</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act7" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="2"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">%par2</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task37">
+<cdate>1750080110001</cdate>
+<edate>1750080110002</edate>
+<id>37</id>
+<nme>Run_Random_Engagement_Master</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Clear_AI_Variables</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Select_Random_Comment_DM</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act10" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Check_And_Engage_Account</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%FollowerSelected</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act11" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act12" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%err</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act13" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Error_Fallback_Logic</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%errmsg</Str>
+<Str sr="arg3" ve="3">%trun</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act14" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act2" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%engagement_type</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="2"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%engagement_type</lhs>
+<op>8</op>
+<rhs>1</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act4" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Select_Random_Target_Term</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Random_Search_Result_Selector</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Check_And_Engage_Account</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%SearchSelectedAccount</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act8" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Select_Random_Source_Account</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Random_Follower_Selector</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task38">
+<cdate>1750080120003</cdate>
+<edate>1750080120004</edate>
+<id>38</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Run_Random_Engagement_Master</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task39">
+<cdate>1750081993240</cdate>
+<edate>1750082008542</edate>
+<id>39</id>
+<nme>Collect_Visible_Posts</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+</Task>
+<Task sr="task4">
+  <cdate>1746100440000</cdate>
+  <edate>1746100440001</edate>
+  <id>4</id>
+  <nme>End Session Gracefully</nme>
+  <pri>100</pri>
+  <Action sr="act0" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%IsRunning</Str>
+    <Str sr="arg1" ve="3"></Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act1" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%Paused</Str>
+    <Str sr="arg1" ve="3"></Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act2" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%reason</Str>
+    <Str sr="arg1" ve="3">%par1</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act3" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Log Action</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">SESSION_END</Str>
+    <Str sr="arg3" ve="3">%reason</Str>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act4" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%reason</lhs>
+        <op>0</op>
+        <rhs>completed</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act5" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">
+Session completed successfully
+Like Count: %LikeCount
+Follow Count: %FollowCount
+Comment Count: %CommentCount
+DM Count: %DMCount
+</Str>
+    <Int sr="arg1" val="1"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act6" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act7" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%reason</lhs>
+        <op>0</op>
+        <rhs>manual_kill</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act8" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">
+Session terminated manually
+</Str>
+    <Int sr="arg1" val="1"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act9" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act10" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%reason</lhs>
+        <op>0</op>
+        <rhs>deadman_restart</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act11" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">
+Deadman restart triggered
+</Str>
+    <Int sr="arg1" val="1"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act12" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Parse Config File</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act13" ve="7">
+    <code>43</code>
+  </Action>
+</Task>
+<Task sr="task40">
+<cdate>1750082015582</cdate>
+<edate>1750082093510</edate>
+<id>40</id>
+<nme>Engage_Random_Posts</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%NumToEngage</Str>
+<Int sr="arg1" val="2"/>
+<Int sr="arg2" val="3"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>39</code>
+<Str sr="arg0" ve="3">%i</Str>
+<Str sr="arg1" ve="3">1:%NumToEngage</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act10" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Perform Like</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act11" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Perform Comment</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3">%CommentContent</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act12" ve="7">
+<code>245</code>
+</Action>
+<Action sr="act13" ve="7">
+<code>40</code>
+</Action>
+<Action sr="act2" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3">%PostIndex</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2">
+<var>%PostListArray(#)</var>
+</Int>
+</Action>
+<Action sr="act3" ve="7">
+<code>545</code>
+<Str sr="arg0" ve="3"/>
+<Int sr="arg1"/>
+<Int sr="arg2"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: UI Query for like count goes here.</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%ThisLikeCount</Str>
+<Str sr="arg1" ve="3">10</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%ThisLikeCount</lhs>
+<op>7</op>
+<rhs>%config_data[maxLikesOnPost]</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act7" ve="7">
+<code>245</code>
+</Action>
+<Action sr="act8" ve="7">
+<code>135</code>
+<Int sr="arg0" val="2"/>
+<Int sr="arg1" val="1"/>
+<Str sr="arg2" ve="3"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task41">
+<cdate>1746500640000</cdate>
+<edate>1746500640001</edate>
+<id>41</id>
+<nme>Return_To_Storyboard</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>300</code>
+<label>Start Return_To_Storyboard</label>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: AutoInput taps Instagram home button</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: AutoInput ensures storyboard/home screen is visible
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>300</code>
+<label>End Return_To_Storyboard</label>
+</Action>
+</Task>
+<Task sr="task42">
+<cdate>1746500650000</cdate>
+<edate>1746500650001</edate>
+<id>42</id>
+<nme>Check_If_Target_Already_Engaged</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>300</code>
+<label>Start Check_If_Target_Already_Engaged</label>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Placeholder: Tasker reads engaged CSV/TXT file</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: Tasker compares current target username to engaged list
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: If target found in log, sets %SkipTarget to true
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+Placeholder: If target not found, sets %SkipTarget to false
+</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>300</code>
+<label>End Check_If_Target_Already_Engaged</label>
+</Action>
+</Task>
+<Task sr="task43">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>43</id>
+<pri>6</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Parse Config File</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task44">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>44</id>
+<pri>6</pri>
+<Action sr="act0" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%IsRunning</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%TIMES</lhs>
+<op>7</op>
+<rhs>%SessionStartTime + %SessionDuration</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<label>End the current session gracefully.</label>
+<Str sr="arg0" ve="3">End Session Gracefully</Str>
+<Int sr="arg1" val="110"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">timeout</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>130</code>
+<label>Parse the config file to decide next plan.</label>
+<Str sr="arg0" ve="3">Parse Config File</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">timeout</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task45">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>45</id>
+<pri>6</pri>
+<Action sr="act0" ve="7">
+<code>37</code>
+<label>Fix #2: Align Deadman Checker to session duration.</label>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%IsRunning</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%TIMES</lhs>
+<op>7</op>
+<rhs>%LastActivityTimestamp + %SessionDuration</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Restart If Idle</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task46">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>46</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Pause On Low Battery</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task47">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>47</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Resume From Low Battery</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task48">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>48</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Recover From Failure</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task49">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>49</id>
+<pri>6</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Check Internet</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task5">
+<cdate>1746100430000</cdate>
+<edate>1746100430001</edate>
+<id>5</id>
+<nme>Kill Switch</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">End Session Gracefully</Str>
+<Int sr="arg1" val="110"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">manual_kill</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task50">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>50</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Heat Pause</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task51">
+<cdate>1750070312308</cdate>
+<edate>1750070312308</edate>
+<id>51</id>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Heat Resume</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task52">
+<cdate>1746000300000</cdate>
+<edate>1746000300001</edate>
+<id>52</id>
+<nme>Initialize Globals</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>389</code>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">%AutomationBrightness=5 %CoolingBrightness=1</Str>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3">=</Str>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="3"/>
+<Int sr="arg7" val="0"/>
+<Int sr="arg8" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">IEA Global variables initialized.</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task53">
+  <cdate>1750158627430</cdate>
+  <edate>1750158627430</edate>
+  <id>53</id>
+  <nme>Parse Config File</nme>
+  <pri>100</pri>
+  <Action sr="act0" ve="7">
+    <code>129</code>
+    <Str sr="arg0" ve="3">Parsing Configuration File</Str>
+    <Int sr="arg1" val="1"/>
+  </Action>
+  <Action sr="act1" ve="7">
+    <code>417</code>
+    <se>false</se>
+    <Str sr="arg0" ve="3">/Documents/masterConfig.json</Str>
+    <Str sr="arg1" ve="3">%config_data</Str>
+    <Int sr="arg2" val="0"/>
+  </Action>
+  <Action sr="act2" ve="7">
+    <code>749</code>
+    <se>false</se>
+    <Str sr="arg0" ve="3">%config_data</Str>
+    <Str sr="arg1" ve="3">%config_json</Str>
+    <Int sr="arg2" val="0"/>
+  </Action>
+  <Action sr="act3" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%ActionCount</Str>
+    <Str sr="arg1" ve="3">%config_json(actions).length()</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act4" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%DefaultMaxAttempts</Str>
+    <Str sr="arg1" ve="3">%config_json(globalDefaults.safety.maxTouchAttempts)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act5" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%DefaultRetryDelay</Str>
+    <Str sr="arg1" ve="3">%config_json(globalDefaults.safety.retryDelayMs)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act6" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%DefaultTimeout</Str>
+    <Str sr="arg1" ve="3">%config_json(globalDefaults.safety.totalTimeoutMs)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act7" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%DefaultFallbackAction</Str>
+    <Str sr="arg1" ve="3">%config_json(globalDefaults.safety.fallbackAction)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act8" ve="7">
+    <code>575</code>
+    <Str sr="arg0" ve="3">%Actions</Str>
+    <Str sr="arg1" ve="3"/>
+  </Action>
+  <Action sr="act9" ve="7">
+    <code>137</code>
+    <Int sr="arg0" val="0"/>
+    <Str sr="arg1" ve="3"/>
+  </Action>
+  <Action sr="act10" ve="7">
+    <code>34</code>
+    <Int sr="arg0" val="0"/>
+    <Int sr="arg1" val="1"/>
+    <Str sr="arg2" ve="3">%i</Str>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4">
+        <var>%ActionCount</var>
+    </Int>
+  </Action>
+  <Action sr="act11" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_type</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].type)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act12" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_time</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].time)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act13" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_target</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].target)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act14" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_selector</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].selector)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act15" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_content</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].content)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act16" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_id</Str>
+    <Str sr="arg1" ve="3">%config_json(actions[%i].action_id)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act17" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_entry</Str>
+    <Str sr="arg1" ve="3">%action_time|%action_type|%action_target|%action_selector|%action_content|%action_id</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act18" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%Actions(%i)</Str>
+    <Str sr="arg1" ve="3">%action_entry</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act19" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act20" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Parsed %ActionCount actions from config file</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act21" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Initialize Session</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+</Task>
+</Task>
+<Task sr="task54"> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<cdate>1746000320000</cdate>
+<edate>1750082101019</edate>
+<id>54</id>
+<nme>Start Engagement Session</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Parse Config File</Str>
+<Int sr="arg1" val="200"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+<Int sr="arg10" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>37</code>
+<label>Guard: Prevent concurrent sessions</label>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%IsRunning</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act2" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act4" ve="7">
+<code>37</code>
+<label>Guard: Do not start if paused</label>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%Paused</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act5" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act7" ve="7">
+<code>37</code>
+<label>Guard: Do not start if error flag is present</label>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%SessionError</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act8" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act10" ve="7">
+<code>389</code>
+<label>Session Start</label>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">
+%IsRunning=true %DimPending=true %PrevBrightness=%BRIGHT %SessionStartTime=%TIMES %LikeCount=0 %CommentCount=0 %DMCount=0 %FollowCount=0
+</Str>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3">=</Str>
+<Int sr="arg5" val="1"/>
+<Int sr="arg6" val="3"/>
+<Int sr="arg7" val="0"/>
+<Int sr="arg8" val="0"/>
+</Action>
+<Action sr="act11" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%SessionError</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act12" ve="7">
+<code>312</code>
+<Int sr="arg0" val="2"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Bundle sr="arg6">
+<Vals sr="val"/>
+</Bundle>
+</Action>
+<Action sr="act13" ve="7">
+<code>523</code>
+<Str sr="arg0" ve="3">IEA Running</Str>
+<Str sr="arg1" ve="3">Session Active. Tap here to kill.</Str>
+<Str sr="arg10" ve="3"/>
+<Str sr="arg11" ve="3"/>
+<Str sr="arg12" ve="3"/>
+<Img sr="arg2" ve="2">
+<uri>
+android.resource://net.dinglisch.android.taskerm/drawable/mw_action_power_settings_new
+</uri>
+</Img>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="1"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<Int sr="arg7" val="0"/>
+<Int sr="arg8" val="0"/>
+<Str sr="arg9" ve="3"/>
+</Action>
+<Action sr="act14" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act15" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%IsRunning</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%DimPending</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act16" ve="7">
+<code>810</code>
+<Int sr="arg0" val="5"/>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act17" ve="7">
+<code>312</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Bundle sr="arg6">
+<Vals sr="val"/>
+</Bundle>
+</Action>
+<Action sr="act18" ve="7">
+<code>820</code>
+<Int sr="arg0" val="7"/>
+</Action>
+<Action sr="act19" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%DimPending</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act20" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act21" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Collect_Visible_Posts</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act22" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Engage_Random_Posts</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act23" ve="7">
+<code>39</code>
+<Str sr="arg0" ve="3">%idx</Str>
+<Str sr="arg1" ve="3">1:%config_data[actions](#)</Str>
+<Int sr="arg2" val="0"/>
+</Action>
+<Action sr="act24" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Parse Config File</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act25" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%config_data[timestamp]</lhs>
+<op>7</op>
+<rhs>%LastConfigTimestamp</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act26" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%LastConfigTimestamp</Str>
+<Str sr="arg1" ve="3">%config_data[timestamp]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act27" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%SessionDuration</Str>
+<Str sr="arg1" ve="3">%config_data[duration]</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act28" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%SessionStartTime</Str>
+<Str sr="arg1" ve="3">%TIMES</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act29" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">Config reloaded mid-session. Restarting loop.</Str>
+<Int sr="arg1" val="0"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act30" ve="7">
+<code>135</code>
+<Int sr="arg0" val="1"/>
+<Int sr="arg1" val="0"/>
+<Str sr="arg2" ve="3">Session Start</Str>
+</Action>
+<Action sr="act31" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act32" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%Paused</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act33" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="10"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act34" ve="7">
+<code>135</code>
+<Int sr="arg0" val="2"/>
+<Int sr="arg1" val="0"/>
+<Str sr="arg2" ve="3"/>
+</Action>
+<Action sr="act35" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act36" ve="7">
+<code>389</code>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">
+%maxTouchAttempts=%defaultMaxTouchAttempts %retryDelayMs=%defaultRetryDelayMs %totalTimeoutMs=%defaultTotalTimeoutMs %fallbackAction=%defaultFallbackAction %requiresNetwork=%defaultRequiresNetwork %skipOnLowBattery=%defaultSkipOnLowBattery %maxConsecutiveFailures=%defaultMaxConsecutiveFailures
+</Str>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3">=</Str>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="3"/>
+<Int sr="arg7" val="0"/>
+<Int sr="arg8" val="1"/>
+</Action>
+<Action sr="act37" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%maxTouchAttempts</Str>
+<Str sr="arg1" ve="3">
+%config_data[actions.safety.maxTouchAttempts](%idx)
+</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>
+%config_data[actions.safety.maxTouchAttempts](%idx)
+</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act38" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%retryDelayMs</Str>
+<Str sr="arg1" ve="3">%config_data[actions.safety.retryDelayMs](%idx)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%config_data[actions.safety.retryDelayMs](%idx)</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act39" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%totalTimeoutMs</Str>
+<Str sr="arg1" ve="3">%config_data[actions.safety.totalTimeoutMs](%idx)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%config_data[actions.safety.totalTimeoutMs](%idx)</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act40" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%fallbackAction</Str>
+<Str sr="arg1" ve="3">%config_data[actions.safety.fallbackAction](%idx)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%config_data[actions.safety.fallbackAction](%idx)</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act41" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%requiresNetwork</Str>
+<Str sr="arg1" ve="3">%config_data[actions.safety.requiresNetwork](%idx)</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%config_data[actions.safety.requiresNetwork](%idx)</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act42" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%skipOnLowBattery</Str>
+<Str sr="arg1" ve="3">
+%config_data[actions.safety.skipOnLowBattery](%idx)
+</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>
+%config_data[actions.safety.skipOnLowBattery](%idx)
+</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act43" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%maxConsecutiveFailures</Str>
+<Str sr="arg1" ve="3">
+%config_data[actions.safety.maxConsecutiveFailures](%idx)
+</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>
+%config_data[actions.safety.maxConsecutiveFailures](%idx)
+</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act44" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%requiresNetwork</lhs>
+<op>0</op>
+<rhs>true</rhs>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%InternetOffline</lhs>
+<op>0</op>
+<rhs>true</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act45" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">End Session Gracefully</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">internet_failure</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act46" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act47" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act48" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%skipOnLowBattery</lhs>
+<op>0</op>
+<rhs>true</rhs>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%BATT</lhs>
+<op>6</op>
+<rhs>20</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act49" ve="7">
+<code>135</code>
+<Int sr="arg0" val="3"/>
+<Int sr="arg1" val="1"/>
+<Str sr="arg2" ve="3"/>
+</Action>
+<Action sr="act50" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act51" ve="7">
+<code>389</code>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Str sr="arg1" ve="3">
+%actionId=%config_data[actions.action_id](%idx) %actionAccount=%config_data[actions.account](%idx) %type=%config_data[actions.type](%idx) %time=%config_data[actions.time](%idx) %target=%config_data[actions.target](%idx) %content=%config_data[actions.content](%idx) %waitB=%config_data[actions.waitBefore](%idx) %waitA=%config_data[actions.waitAfter](%idx) %selector=%config_data[actions.selector](%idx)
+</Str>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3">=</Str>
+<Int sr="arg5" val="1"/>
+<Int sr="arg6" val="3"/>
+<Int sr="arg7" val="0"/>
+<Int sr="arg8" val="1"/>
+</Action>
+<Action sr="act52" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<bool0>And</bool0>
+<Condition sr="c0" ve="3">
+<lhs>%actionAccount</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+<Condition sr="c1" ve="3">
+<lhs>%actionAccount</lhs>
+<op>1</op>
+<rhs>%ActiveAccount</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act53" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Switch Account</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%actionAccount</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act54" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%ActiveAccount</Str>
+<Str sr="arg1" ve="3">%actionAccount</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act55" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act56" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1">
+<var>%waitB</var>
+</Int>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act57" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%type</lhs>
+<op>0</op>
+<rhs>like</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act58" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Perform Like</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%target</Str>
+<Str sr="arg3" ve="3">%selector</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act59" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act60" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%type</lhs>
+<op>0</op>
+<rhs>comment</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act61" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Perform Comment</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%target</Str>
+<Str sr="arg3" ve="3">%content</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act62" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act63" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%type</lhs>
+<op>0</op>
+<rhs>dm</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act64" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Perform DM</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%target</Str>
+<Str sr="arg3" ve="3">%content</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act65" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act66" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%type</lhs>
+<op>0</op>
+<rhs>follow</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act67" ve="7">
+<code>130</code>
+<se>false</se>
+<Str sr="arg0" ve="3">Perform Follow</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%target</Str>
+<Str sr="arg3" ve="3">%selector</Str>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act68" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act69" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%err</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act70" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%fallbackAction</lhs>
+<op>0</op>
+<rhs>skipAndContinue</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act71" ve="7">
+<code>135</code>
+<Int sr="arg0" val="3"/>
+<Int sr="arg1" val="1"/>
+<Str sr="arg2" ve="3"/>
+</Action>
+<Action sr="act72" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act73" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%fallbackAction</lhs>
+<op>0</op>
+<rhs>backAndSkip</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act74" ve="7">
+<code>245</code>
+</Action>
+<Action sr="act75" ve="7">
+<code>135</code>
+<Int sr="arg0" val="3"/>
+<Int sr="arg1" val="1"/>
+<Str sr="arg2" ve="3"/>
+</Action>
+<Action sr="act76" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act77" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act78" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act79" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1">
+<var>%waitA</var>
+</Int>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act80" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%LastActivityTimestamp</Str>
+<Str sr="arg1" ve="3">%TIMES</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act81" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Do Random Human Action</Str>
+<Int sr="arg1" val="90"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act82" ve="7">
+<code>40</code>
+</Action>
+<Action sr="act83" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">End Session Gracefully</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">complete</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task55">
+<cdate>1746000330000</cdate>
+<edate>1746000330001</edate>
+<id>55</id>
+<nme>End Session Gracefully</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%SessionError</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%ErrorCount</Str>
+<Str sr="arg1" ve="3">0</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act10" ve="7">
+<code>810</code>
+<Int sr="arg0">
+<var>%PrevBrightness</var>
+</Int>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act11" ve="7">
+<code>312</code>
+<Int sr="arg0" val="2"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Bundle sr="arg6">
+<Vals sr="val"/>
+</Bundle>
+</Action>
+<Action sr="act12" ve="7">
+<code>820</code>
+<Int sr="arg0" val="0"/>
+</Action>
+<Action sr="act13" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Save Session Log</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3">%par1</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>779</code>
+<Str sr="arg0" ve="3">IEA Running</Str>
+<Int sr="arg1" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%IsRunning</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%Paused</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%DimPending</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%ActiveAccount</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%par1</lhs>
+<op>2</op>
+<rhs>*timeout*</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act8" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%SessionError</Str>
+<Str sr="arg1" ve="3">true</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act9" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task56">
+<cdate>1746000340000</cdate>
+<edate>1746000340001</edate>
+<id>56</id>
+<nme>Heat Pause</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%Paused</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act1" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act3" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%Paused</Str>
+<Str sr="arg1" ve="3">true</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>341</code>
+<Int sr="arg0" val="10"/>
+<Str sr="arg1" ve="3"/>
+<Str sr="arg2" ve="3">%PrevWiFi</Str>
+</Action>
+<Action sr="act5" ve="7">
+<code>425</code>
+<Int sr="arg0" val="0"/>
+</Action>
+<Action sr="act6" ve="7">
+<code>294</code>
+<Int sr="arg0" val="0"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>810</code>
+<Int sr="arg0" val="1"/>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act8" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Automation paused for cooling at %BATTEMP°C. Screen dimmed for safety.
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task57">
+<cdate>1746000350000</cdate>
+<edate>1746000350001</edate>
+<id>57</id>
+<nme>Heat Resume</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%Paused</lhs>
+<op>13</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act1" ve="7">
+<code>137</code>
+<Int sr="arg0" val="0"/>
+<Str sr="arg1" ve="3"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act3" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%Paused</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act4" ve="7">
+<code>810</code>
+<Int sr="arg0" val="5"/>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="1"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%PrevWiFi</lhs>
+<op>0</op>
+<rhs>on</rhs>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act6" ve="7">
+<code>425</code>
+<Int sr="arg0" val="1"/>
+</Action>
+<Action sr="act7" ve="7">
+<code>38</code>
+</Action>
+<Action sr="act8" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">
+%DATE %TIME: Automation resumed: Battery cooled to %BATTEMP°C. Brightness restored.
+</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task58">
+<cdate>1746000360000</cdate>
+<edate>1746000360001</edate>
+<id>58</id>
+<nme>Pause On Low Battery</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>547</code>
+<Str sr="arg0" ve="3">%Paused</Str>
+<Str sr="arg1" ve="3">true</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%DATE %TIME: Paused due to low battery (%BATT%).</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task59">
+<cdate>1746000370000</cdate>
+<edate>1746000370001</edate>
+<id>59</id>
+<nme>Resume From Low Battery</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>549</code>
+<Str sr="arg0" ve="3">%Paused</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>410</code>
+<Str sr="arg0" ve="3">iea-automation-log.txt</Str>
+<Str sr="arg1" ve="3">%DATE %TIME: Resumed from low battery pause.</Str>
+<Int sr="arg2" val="1"/>
+<Int sr="arg3" val="1"/>
+</Action>
+</Task>
+<Task sr="task6">
+<cdate>1746100440000</cdate>
+<edate>1746100440001</edate>
+<id>6</id>
+<nme>Manual Start</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Initialize Globals</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Parse Config File</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+</Task>
+<Task sr="task60">
+  <cdate>1749158627470</cdate>
+  <edate>1749158627470</edate>
+  <id>60</id>
+  <nme>Process Next Action</nme>
+  <pri>100</pri>
+  <Action sr="act0" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <bool0>And</bool0>
+      <Condition sr="c0" ve="3">
+        <lhs>%Paused</lhs>
+        <op>13</op>
+        <rhs></rhs>
+      </Condition>
+      <Condition sr="c1" ve="3">
+        <lhs>%ActionIndex</lhs>
+        <op>5</op>
+        <rhs>%ActionCount</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act1" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%current_action</Str>
+    <Str sr="arg1" ve="3">%Actions(%ActionIndex)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act2" ve="7">
+    <code>590</code>
+    <Str sr="arg0" ve="3">%current_action</Str>
+    <Str sr="arg1" ve="3">|</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+  </Action>
+  <Action sr="act3" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_time</Str>
+    <Str sr="arg1" ve="3">%current_action(1)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act4" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_type</Str>
+    <Str sr="arg1" ve="3">%current_action(2)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act5" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_target</Str>
+    <Str sr="arg1" ve="3">%current_action(3)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act6" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_selector</Str>
+    <Str sr="arg1" ve="3">%current_action(4)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act7" ve="7">
+    <code>547</code>
+    <Str sr="arg0" ve="3">%action_content</Str>
+    <Str sr="arg1" ve="3">%current_action(5)</Str>
+    <Int sr="arg2" val="0"/>
+    <Int sr="arg3" val="0"/>
+    <Int sr="arg4" val="0"/>
+    <Int sr="arg5" val="3"/>
+    <Int sr="arg6" val="0"/>
+  </Action>
+  <Action sr="act8" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Processing action: %action_type for %action_target</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+  <Action sr="act9" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%action_type</lhs>
+        <op>0</op>
+        <rhs>like</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act10" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">AI_Engage_Known</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">%action_target</Str>
+    <Str sr="arg3" ve="3">like</Str>
+    <Str sr="arg4" ve="3">%action_selector</Str>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act11" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act12" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%action_type</lhs>
+        <op>0</op>
+        <rhs>comment</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act13" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">AI_Engage_Known</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">%action_target</Str>
+    <Str sr="arg3" ve="3">comment</Str>
+    <Str sr="arg4" ve="3">%action_selector</Str>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3">%action_content</Str>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act14" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act15" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%action_type</lhs>
+        <op>0</op>
+        <rhs>follow</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act16" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">AI_Engage_Known</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">%action_target</Str>
+    <Str sr="arg3" ve="3">follow</Str>
+    <Str sr="arg4" ve="3">%action_selector</Str>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act17" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act18" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%action_type</lhs>
+        <op>0</op>
+        <rhs>dm</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act19" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">AI_Engage_Known</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">%action_target</Str>
+    <Str sr="arg3" ve="3">dm</Str>
+    <Str sr="arg4" ve="3">%action_selector</Str>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3">%action_content</Str>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act20" ve="7">
+    <code>43</code>
+  </Action>
+  <Action sr="act21" ve="7">
+    <code>888</code>
+    <Str sr="arg0" ve="3">%ActionIndex</Str>
+    <Int sr="arg1" val="1"/>
+    <Int sr="arg2" val="0"/>
+  </Action>
+  <Action sr="act22" ve="7">
+    <code>37</code>
+    <ConditionList sr="if">
+      <Condition sr="c0" ve="3">
+        <lhs>%ActionIndex</lhs>
+        <op>0</op>
+        <rhs>%ActionCount</rhs>
+      </Condition>
+    </ConditionList>
+  </Action>
+  <Action sr="act23" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">End Session Gracefully</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3">completed</Str>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act24" ve="7">
+    <code>38</code>
+  </Action>
+  <Action sr="act25" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">AI_Wait_Random</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act26" ve="7">
+    <code>130</code>
+    <Str sr="arg0" ve="3">Process Next Action</Str>
+    <Int sr="arg1" val="100"/>
+    <Int sr="arg10" val="0"/>
+    <Str sr="arg2" ve="3"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Int sr="arg5" val="0"/>
+    <Int sr="arg6" val="0"/>
+    <Str sr="arg7" ve="3"/>
+    <Int sr="arg8" val="0"/>
+    <Int sr="arg9" val="0"/>
+  </Action>
+  <Action sr="act27" ve="7">
+    <code>38</code>
+  </Action>
+  <Action sr="act28" ve="7">
+    <code>548</code>
+    <Str sr="arg0" ve="3">Session paused. Waiting to resume.</Str>
+    <Int sr="arg1" val="0"/>
+    <Str sr="arg10" ve="3"/>
+    <Int sr="arg11" val="1"/>
+    <Int sr="arg12" val="0"/>
+    <Str sr="arg13" ve="3"/>
+    <Int sr="arg14" val="0"/>
+    <Str sr="arg15" ve="3"/>
+    <Int sr="arg2" val="1"/>
+    <Str sr="arg3" ve="3"/>
+    <Str sr="arg4" ve="3"/>
+    <Str sr="arg5" ve="3"/>
+    <Str sr="arg6" ve="3"/>
+    <Str sr="arg7" ve="3"/>
+    <Str sr="arg8" ve="3"/>
+    <Int sr="arg9" val="1"/>
+  </Action>
+</Task>
+</Task>
+<Task sr="task61">
+<cdate>1746100390000</cdate>
+<edate>1746100390001</edate>
+<id>61</id>
+<nme>Check Internet</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>339</code>
+<se>false</se>
+<Bundle sr="arg0">
+<Vals sr="val"/>
+</Bundle>
+<Int sr="arg1" val="0"/>
+<Int sr="arg10" val="1"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg2" ve="3">https://google.com</Str>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="10"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>37</code>
+<ConditionList sr="if">
+<Condition sr="c0" ve="3">
+<lhs>%err</lhs>
+<op>12</op>
+<rhs/>
+</Condition>
+</ConditionList>
+</Action>
+<Action sr="act2" ve="7">
+<code>547</code>
+<label>
+Fix #9: Sets a global flag if the internet is down.
+</label>
+<Str sr="arg0" ve="3">%InternetOffline</Str>
+<Str sr="arg1" ve="3">true</Str>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+<Int sr="arg5" val="3"/>
+<Int sr="arg6" val="0"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>43</code>
+</Action>
+<Action sr="act4" ve="7">
+<code>549</code>
+<label>
+Fix #9: Clears the global flag if the internet is working.
+</label>
+<Str sr="arg0" ve="3">%InternetOffline</Str>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="0"/>
+<Int sr="arg3" val="0"/>
+</Action>
+<Action sr="act5" ve="7">
+<code>38</code>
+</Action>
+</Task>
+<Task sr="task7">
+<cdate>1746100450000</cdate>
+<edate>1746100450001</edate>
+<id>7</id>
+<nme>Switch Account</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Open Instagram</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert AutoInput to switch account to %par1
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+</Task>
+<Task sr="task8">
+<cdate>1746100460000</cdate>
+<edate>1746100460001</edate>
+<id>8</id>
+<nme>Perform Like</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Open Instagram</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert AutoInput to like post %par1 using selector %par2
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>888</code>
+<Str sr="arg0" ve="3">%LikeCount</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+</Action>
+</Task>
+<Task sr="task9">
+<cdate>1746100470000</cdate>
+<edate>1746100470001</edate>
+<id>9</id>
+<nme>Perform Comment</nme>
+<pri>100</pri>
+<Action sr="act0" ve="7">
+<code>130</code>
+<Str sr="arg0" ve="3">Open Instagram</Str>
+<Int sr="arg1" val="100"/>
+<Int sr="arg10" val="0"/>
+<Str sr="arg2" ve="3"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Int sr="arg5" val="0"/>
+<Int sr="arg6" val="0"/>
+<Str sr="arg7" ve="3"/>
+<Int sr="arg8" val="0"/>
+<Int sr="arg9" val="0"/>
+</Action>
+<Action sr="act1" ve="7">
+<code>30</code>
+<Int sr="arg0" val="0"/>
+<Int sr="arg1" val="0"/>
+<Int sr="arg2" val="2"/>
+<Int sr="arg3" val="0"/>
+<Int sr="arg4" val="0"/>
+</Action>
+<Action sr="act2" ve="7">
+<code>548</code>
+<Str sr="arg0" ve="3">
+// Placeholder: Insert AutoInput to comment on post %par1 with text: %par2
+</Str>
+<Int sr="arg1" val="1"/>
+<Str sr="arg10" ve="3"/>
+<Int sr="arg11" val="1"/>
+<Int sr="arg12" val="0"/>
+<Str sr="arg13" ve="3"/>
+<Int sr="arg14" val="0"/>
+<Str sr="arg15" ve="3"/>
+<Int sr="arg2" val="1"/>
+<Str sr="arg3" ve="3"/>
+<Str sr="arg4" ve="3"/>
+<Str sr="arg5" ve="3"/>
+<Str sr="arg6" ve="3"/>
+<Str sr="arg7" ve="3"/>
+<Str sr="arg8" ve="3"/>
+<Int sr="arg9" val="1"/>
+</Action>
+<Action sr="act3" ve="7">
+<code>888</code>
+<Str sr="arg0" ve="3">%CommentCount</Str>
+<Int sr="arg1" val="1"/>
+<Int sr="arg2" val="0"/>
+</Action>
+</Task>
+</TaskerData>
